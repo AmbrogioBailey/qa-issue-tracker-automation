@@ -1,13 +1,13 @@
 # QA Issue Tracker Automation
 
-A professional QA automation testing project built to validate and test my Spring Boot Issue Tracker REST API.
+An entry-level QA automation testing project built to validate and test my Spring Boot Issue Tracker REST API.
 
 This project demonstrates hands-on experience with:
 
 - API testing
 - Automated regression tests
 - Rest Assured + JUnit 5 frameworks
-- Real backend validation using a working REST service
+- Backend validation using a working REST service
 
 ---
 
@@ -26,11 +26,11 @@ This project focuses on:
 
 ## 🔧 Technologies Used
 
-- **Java 21**
-- **Maven**
-- **JUnit 5**
-- **Rest Assured**
-- **Spring Boot REST API (tested system)**
+- Java 21
+- Maven
+- JUnit 5
+- Rest Assured
+- Spring Boot REST API (tested system)
 
 ---
 
@@ -59,26 +59,23 @@ src/test/java/com/ambrogio/qa/
 │
 └── util/                      # Utility helpers (future expansion)
 ▶️ How To Run Tests
-Make sure the Issue Tracker API is running locally first:
+Make sure the Issue Tracker API is running locally:
 
 http://localhost:8080
 Then run:
 
 mvn clean test
-Successful output looks like:
-
+✅ Example Test Output
+Tests run: 2, Failures: 0, Errors: 0
 BUILD SUCCESS
-Tests run: 2, Failures: 0
 🧠 Planned Next Steps
 This project is actively being expanded with:
-
-Authentication testing
 
 Negative test cases (400/404 validation)
 
 Assignment endpoint testing (PUT /assign)
 
-Full regression suite organization
+Authentication testing
 
 CI automation (GitHub Actions)
 
