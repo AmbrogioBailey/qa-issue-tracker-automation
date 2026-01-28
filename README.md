@@ -59,6 +59,7 @@ src/test/java/com/ambrogio/qa/
 │   └── IssuesApiTests.java     # Automated tests for Issue endpoints
 │
 └── util/                       # Utility helpers (future expansion)
+```
 ## ▶️ How To Run Tests
 Prerequisites
 Make sure the Issue Tracker API is running locally:
