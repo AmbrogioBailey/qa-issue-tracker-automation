@@ -89,11 +89,15 @@ CI automation with GitHub Actions
 
 Expanded regression test suite and reporting
 
-👤 Author
-Ambrogio Bailey
+---
+
+## 👤 Author
+
+**Ambrogio Bailey**  
 Self-taught backend + QA-focused developer building real-world automation skills.
 
-GitHub: https://github.com/AmbrogioBailey
-LinkedIn: https://www.linkedin.com/in/ambrogio-bailey-b67529373/
+- GitHub: https://github.com/AmbrogioBailey  
+- LinkedIn: https://www.linkedin.com/in/ambrogio-bailey-b67529373/
+
 
 
