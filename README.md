@@ -1,11 +1,11 @@
 # QA Issue Tracker Automation
 
-An entry-level QA automation testing project built to validate and test my Spring Boot Issue Tracker REST API.
+An entry-level QA automation testing project built to validate and test my Spring Boot **Issue Tracker REST API**.
 
 This project demonstrates hands-on experience with:
 
 - API testing
-- Automated regression tests
+- Automated regression testing
 - Rest Assured + JUnit 5 frameworks
 - Backend validation using a working REST service
 
@@ -40,7 +40,8 @@ So far, the automation suite includes:
 
 - Creating a new issue (`POST /api/issues`)
 - Fetching all issues (`GET /api/issues`)
-- Validating HTTP status codes and JSON fields
+- Validating HTTP status codes and JSON response fields
+- Smoke test execution using tagged test groups
 
 More endpoints and deeper assertions will be added next.
 
@@ -52,19 +53,25 @@ More endpoints and deeper assertions will be added next.
 src/test/java/com/ambrogio/qa/
 │
 ├── config/
-│   └── TestConfig.java        # Base configuration and API setup
+│   └── TestConfig.java         # Base configuration and API setup
 │
 ├── issues/
-│   └── IssuesApiTests.java    # Automated tests for Issue endpoints
+│   └── IssuesApiTests.java     # Automated tests for Issue endpoints
 │
-└── util/                      # Utility helpers (future expansion)
+└── util/                       # Utility helpers (future expansion)
 ▶️ How To Run Tests
+Prerequisites
 Make sure the Issue Tracker API is running locally:
 
 http://localhost:8080
-Then run:
+Running Full Test Suite
+Run the complete regression suite:
 
 mvn clean test
+Running Smoke Tests Only
+Smoke tests verify the most critical API functionality quickly:
+
+mvn test -DincludeTags=smoke
 ✅ Example Test Output
 Tests run: 2, Failures: 0, Errors: 0
 BUILD SUCCESS
@@ -73,11 +80,13 @@ This project is actively being expanded with:
 
 Negative test cases (400/404 validation)
 
-Assignment endpoint testing (PUT /assign)
+Issue update and assignment testing (PUT endpoints)
 
-Authentication testing
+Authentication and authorization test coverage
 
-CI automation (GitHub Actions)
+CI automation with GitHub Actions
+
+Expanded regression test suite and reporting
 
 👤 Author
 Ambrogio Bailey
